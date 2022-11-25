@@ -1,13 +1,20 @@
-// CodeWithHarry OneShot Video - Duration - 40:00
+// CodeWithHarry OneShot Video - Duration - 48:25
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
 using namespace std; // due to this you no longer need to again-n-again write std:: in front of commands - For Example:    std::cout<<"hello world!"
 
+// DECLARING FUNCTIONS...
+
+int sum(int a, int b)
+{
+    int c;
+    c = a + b;
+    return c;
+}
+
 // int main() is the main function - i.e., the our actual program.
 int main()
 {
-
-
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -183,4 +190,17 @@ for (int i = 0; i < 34; i++)            // (initial value , till what? , what to
 {
     cout << "The value of i is " << i << endl;
 }
+*/
+
+// Functions | Calling Functions..
+
+/*
+int first, second;
+cout << "Enter first number" << endl;
+cin >> first;
+
+cout << "Enter second number" << endl;
+cin >> second;
+
+cout << "The function returned " << sum(first, second);
 */
