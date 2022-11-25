@@ -1,4 +1,4 @@
-// CodeWithHarry OneShot Video - Duration - 30:00
+// CodeWithHarry OneShot Video - Duration - 40:00
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
 using namespace std; // due to this you no longer need to again-n-again write std:: in front of commands - For Example:    std::cout<<"hello world!"
@@ -6,6 +6,8 @@ using namespace std; // due to this you no longer need to again-n-again write st
 // int main() is the main function - i.e., the our actual program.
 int main()
 {
+
+
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -149,5 +151,36 @@ case 18:
 default:
     cout << "you are neither 12 nor 18 years old!";
     break;
+}
+*/
+
+// LOOPS - WHILE Loops
+
+/*
+int index = 0;
+while (index < 34)
+{
+    cout << "We are at index number " << index << endl;
+    index++;            // index = index + 1;
+}
+*/
+
+// LOOPS - DO WHILE Loops
+/* This loop runs for atleast 1 minimum time. Whatever the conditions may be, it will run for atleast 1 time. */
+
+/*
+int index = 11;
+do {
+    cout << "We are at index number " << index << endl;
+    index++;            // index = index + 1;
+} while (index > 3453);
+*/
+
+// LOOPS - For Loops
+
+/*
+for (int i = 0; i < 34; i++)            // (initial value , till what? , what to do after each interval or step?)
+{
+    cout << "The value of i is " << i << endl;
 }
 */
