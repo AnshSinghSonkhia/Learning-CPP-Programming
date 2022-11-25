@@ -7,6 +7,7 @@ using namespace std;            // due to this you no longer need to again-n-aga
 int main() {
 
     
+    
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -107,5 +108,9 @@ int main() {
     cout << "Enter Second Number" << endl;
     cin >> b;
 
-    cout << "Sum of a + b = " << a+b;
+    cout << "Sum of a + b = " << a+b <<endl;
+    cout << "Sum of a + b = " << a-b <<endl;
+    cout << "Sum of a + b = " << a*b <<endl;
+    cout << "Sum of a + b = " << a/b <<endl;
+    cout << "Sum of a + b = " << (float) a/b <<endl;        // This is known as typecasting. Without this you won't get the result that you were looking for.
     */
