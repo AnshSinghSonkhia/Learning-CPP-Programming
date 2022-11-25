@@ -1,4 +1,4 @@
-// CodeWithHarry OneShot Video - Duration - 48:25
+// CodeWithHarry OneShot Video - Duration - 52:20
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
 using namespace std; // due to this you no longer need to again-n-again write std:: in front of commands - For Example:    std::cout<<"hello world!"
@@ -15,6 +15,7 @@ int sum(int a, int b)
 // int main() is the main function - i.e., the our actual program.
 int main()
 {
+
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -204,3 +205,32 @@ cin >> second;
 
 cout << "The function returned " << sum(first, second);
 */
+
+// Arrays
+
+/* Array is a variable that can store multiple values of the same type. */
+
+/*
+int arr[3] = {1, 3, 5}; // you can take 3 values in this array.
+cout << arr[2] << endl; // INDEX - starts from 0. ---- So, here the index will be 0 for 1, 1 for 3, 2 for 5...
+*/
+
+/* You can also write like this..
+        int arr[3] = {1,3,5};*/
+
+/*
+int marks[6];
+
+for (int i = 0; i < 6; i++)
+{
+    cout << "Enter the marks of " << i << "th student" << endl;
+    cin >> marks[i];
+}
+
+for (int i = 0; i < 6; i++)
+{
+    cout << "Marks of " << i << "th student is " << marks[i] << endl;
+}
+*/
+
+// The above code was for single dimensional array
