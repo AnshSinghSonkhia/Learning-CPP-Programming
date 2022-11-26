@@ -16,6 +16,7 @@ int sum(int a, int b)
 int main()
 {
 
+    
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -233,4 +234,23 @@ for (int i = 0; i < 6; i++)
 }
 */
 
-// The above code was for single dimensional array
+// The above code was for single dimensional array --^
+
+// 2D Arrays
+
+    /*
+    int arr2d[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6}};
+    */
+
+    // Using Double For-Loops --- to access 2D Arrays
+    /*
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            cout << "The value at " << i << ", " << j << " is " << arr2d[i][j] << endl;
+        }
+    }
+    */
