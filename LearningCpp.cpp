@@ -1,6 +1,7 @@
-// CodeWithHarry OneShot Video - Duration - 52:20
+// CodeWithHarry OneShot Video - Duration - 1:00:23
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
+#include <string>    // To Use the functions of String.
 using namespace std; // due to this you no longer need to again-n-again write std:: in front of commands - For Example:    std::cout<<"hello world!"
 
 // DECLARING FUNCTIONS...
@@ -16,7 +17,11 @@ int sum(int a, int b)
 int main()
 {
 
-    
+// Pointers
+
+
+
+
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -238,19 +243,46 @@ for (int i = 0; i < 6; i++)
 
 // 2D Arrays
 
-    /*
-    int arr2d[2][3] = {
-        {1, 2, 3},
-        {4, 5, 6}};
-    */
+/*
+int arr2d[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}};
+*/
 
-    // Using Double For-Loops --- to access 2D Arrays
-    /*
-    for (int i = 0; i < 2; i++)
+// Using Double For-Loops --- to access 2D Arrays
+/*
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 3; j++)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            cout << "The value at " << i << ", " << j << " is " << arr2d[i][j] << endl;
-        }
+        cout << "The value at " << i << ", " << j << " is " << arr2d[i][j] << endl;
     }
-    */
+}
+*/
+
+// Typecasting
+
+/*
+int a = 343;
+float b = 87.944;
+cout << a / 34 << endl;
+cout << (float)a / 34 << endl;      // Use of typecasting
+
+cout << (int)b;                     // Use of typecasting
+*/
+
+// Strings
+
+/*
+string name1 = "AnshhsnA";
+cout << "My name is " << name1 << "." << endl;
+*/
+
+/* #include <string>   --- To Use the functions of String. */
+
+/*
+cout << "The length of name is " << name1.length() << endl;
+cout << "3 characters of Name starting from 0th index is --- " << name1.substr(0,3) << endl;
+cout << "3 characters of Name starting from 2nd index is --- " << name1.substr(2,3) << endl;
+cout << "3 characters of Name starting from 4th index is --- " << name1.substr(4,3) << endl;
+*/
