@@ -1,4 +1,4 @@
-// CodeWithHarry OneShot Video - Duration - 1:00:23
+// CodeWithHarry OneShot Video - Duration - 1:10:13
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
 #include <string>    // To Use the functions of String.
@@ -13,10 +13,31 @@ int sum(int a, int b)
     return c;
 }
 
+class Employee {
+    public:             // Anyone can access this from outside the class. However, if it would be "private", then it can not be accessed from outside.
+    string name;
+    int salary;
+
+    void printDetails() {
+        cout<<"The name of our first employee is "<< this->name<<" and his salary is $"<<this->salary<<endl;
+    };
+};
+
 // int main() is the main function - i.e., the our actual program.
 int main()
 {
 
+// Classes & Objects
+/* C++ is an object oriented programming language.
+    Classes are like a template or blueprint.
+    For Ex. A template for Restaurant Bill.*/
+
+Employee har;
+har.name = "harry";
+har.salary = 100;
+har.printDetails();
+
+//cout<<"The name of our first employee is "<<har.name<<" and his salary is $"<<har.salary<<endl;
 
 }
 
