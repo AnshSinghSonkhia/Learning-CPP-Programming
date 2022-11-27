@@ -17,10 +17,6 @@ int sum(int a, int b)
 int main()
 {
 
-// Pointers
-
-
-
 
 }
 
@@ -285,4 +281,20 @@ cout << "The length of name is " << name1.length() << endl;
 cout << "3 characters of Name starting from 0th index is --- " << name1.substr(0,3) << endl;
 cout << "3 characters of Name starting from 2nd index is --- " << name1.substr(2,3) << endl;
 cout << "3 characters of Name starting from 4th index is --- " << name1.substr(4,3) << endl;
+*/
+
+// Pointers
+
+/*
+int a = 34;             
+int* ptra;              // telling it, that it's use is to store the address of a variable containing an integer value
+ptra = &a;              // stores the value of variable ```a``` in variable ```ptra```
+cout<<ptra <<endl;      // prints the address of a
+cout<<*ptra <<endl;            // prints the value of varible (i.e., ```a``` ), that is stored in variable  ```ptra```.
+
+float b = 43.321;
+float* ptrb;
+ptrb = &b;
+cout<<ptrb <<endl;
+cout<<*ptrb <<endl;
 */
