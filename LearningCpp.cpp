@@ -1,4 +1,4 @@
-// CodeWithHarry OneShot Video - Duration - 1:10:13
+// [CodeSheet] C++ OneShot (CodeWithHarry)
 
 #include <iostream>  // It's a pre-processor command to process the program before running to save time.
 #include <string>    // To Use the functions of String.
@@ -13,32 +13,64 @@ int sum(int a, int b)
     return c;
 }
 
-class Employee {
-    public:             // Anyone can access this from outside the class. However, if it would be "private", then it can not be accessed from outside.
+class Employee{
+public: // Anyone can access this from outside the class. However, if it would be "private", then it can not be accessed from outside.
     string name;
     int salary;
 
-    void printDetails() {
-        cout<<"The name of our first employee is "<< this->name<<" and his salary is $"<<this->salary<<endl;
+    // constructor
+    Employee(string n, int s, int sp)
+    {
+        this->name = n;
+        this->salary = s;
+        this->secretPassword = sp;
+    }
+
+    void printDetails()
+    {
+        cout << "The name of our first employee is " << this->name << " and his salary is $" << this->salary << endl;
     };
+
+    void getSecretPassword()            // The public methods inside the class can access the Private methods.
+    {
+        cout<<"The secret password of employee is "<< this->secretPassword;
+    }
+
+private:
+    int secretPassword;
 };
+
+// Inheritance
+/* BY this, child class inherites all the properties of base class.*/
+
+class Programmer: public Employee{
+    public:
+        int errors;
+};
+
 
 // int main() is the main function - i.e., the our actual program.
 int main()
 {
 
-// Classes & Objects
-/* C++ is an object oriented programming language.
-    Classes are like a template or blueprint.
-    For Ex. A template for Restaurant Bill.*/
+    // Classes & Objects
+    /* C++ is an object oriented programming language.
+        Classes are like a template or blueprint.
+        For Ex. A template for Restaurant Bill.*/
 
-Employee har;
-har.name = "harry";
-har.salary = 100;
-har.printDetails();
+    // Employee har;
+    // har.name = "harry";
+    // har.salary = 100;
+    // har.printDetails();
 
-//cout<<"The name of our first employee is "<<har.name<<" and his salary is $"<<har.salary<<endl;
+    Employee har("karry constructor", 344, 2457534);
+    // har.name = "harry";
+    // har.salary = 100;
+    har.printDetails();
+    har.getSecretPassword();
+    //cout<<"Secret Password is "<<har.secretPassword<<endl;    //Private Variables Can't be accessed here.
 
+    // cout<<"The name of our first employee is "<<har.name<<" and his salary is $"<<har.salary<<endl;
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
@@ -307,7 +339,7 @@ cout << "3 characters of Name starting from 4th index is --- " << name1.substr(4
 // Pointers
 
 /*
-int a = 34;             
+int a = 34;
 int* ptra;              // telling it, that it's use is to store the address of a variable containing an integer value
 ptra = &a;              // stores the value of variable ```a``` in variable ```ptra```
 cout<<ptra <<endl;      // prints the address of a
