@@ -1,7 +1,10 @@
 // [CodeSheet] C++ OneShot (CodeWithHarry)
 
-#include <iostream>  // It's a pre-processor command to process the program before running to save time.
-#include <string>    // To Use the functions of String.
+#include <iostream>     // It's a pre-processor command to process the program before running to save time.
+#include <string>       // To Use the functions of String.
+#include <cstdlib>      // ZTo generate random numbers.
+
+
 using namespace std; // due to this you no longer need to again-n-again write std:: in front of commands - For Example:    std::cout<<"hello world!"
 
 // DECLARING FUNCTIONS...
@@ -71,6 +74,14 @@ int main()
     //cout<<"Secret Password is "<<har.secretPassword<<endl;    //Private Variables Can't be accessed here.
 
     // cout<<"The name of our first employee is "<<har.name<<" and his salary is $"<<har.salary<<endl;
+
+    cout << endl;
+    // Generating Random Numbers
+
+    srand(6);
+    int randNum = rand();       // but, it gives the same number every time.
+    cout << randNum;
+    return 0;
 }
 
 //--- The below content will work in the main() function. These are notes, that's why I'm writing them here. If you want to check out it's working - Copy & paste it inside ---- ```int main()``` function.
