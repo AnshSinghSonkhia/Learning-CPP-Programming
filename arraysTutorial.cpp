@@ -25,8 +25,13 @@ int main(){
     cout << "What's at Last?  " ;
     cin >> age[n-1];
 
-    for (int i = 0; i < n; i++){
-        cout << age[i] << endl;
+    for (int j = 0; j < n; j++){
+        cout << age[j] << endl;
+    }
+
+    // Print in reverse order
+    for (int j = n-1; j >= 0; j--){
+        cout << age[j] << endl;
     }
     
 
